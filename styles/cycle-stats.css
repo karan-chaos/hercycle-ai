@@ -1,0 +1,43 @@
+/* Cycle Statistics */
+.cs-page{padding-bottom:6rem;padding-top:1.5rem;max-width:32rem;margin:0 auto;width:100%;padding-left:1rem;padding-right:1rem}
+.cs-page__header{margin-bottom:1.25rem}
+.cs-page__title{font-size:1.875rem;font-weight:700;color:var(--text-white,#fff);font-family:var(--serif,serif)}
+.cs-page__subtitle{color:var(--text-soft,rgba(255,255,255,.6));font-size:.8rem;margin-top:.25rem}
+.cs-page__error{background:rgba(229,115,115,.15);border:1px solid rgba(229,115,115,.3);border-radius:.5rem;padding:.625rem .875rem;color:#e57373;font-size:.8rem;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center}
+.cs-page__error button{background:none;border:none;color:#e57373;text-decoration:underline;cursor:pointer;font-size:.8rem}
+.cs-empty{text-align:center;padding:3rem 1.5rem;color:var(--text-soft,rgba(255,255,255,.6))}
+.cs-empty__icon{font-size:3rem;display:block;margin-bottom:.75rem}
+.cs-empty__hint{font-size:.8rem;margin-top:.375rem}
+.cs-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem;margin-bottom:1rem}
+.cs-stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:.625rem .5rem;display:flex;flex-direction:column;align-items:center;gap:.125rem}
+.cs-stat__emoji{font-size:1.1rem}
+.cs-stat__value{font-size:1.1rem;font-weight:700;color:var(--text-white,#fff);white-space:nowrap}
+.cs-stat__label{font-size:.6rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.03em;text-align:center}
+.cs-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:1rem;margin-bottom:.75rem}
+.cs-card--accent{border-left:4px solid #c084fc}
+.cs-card--flags{border-left:4px solid #fbbf24}
+.cs-card__title{font-size:.85rem;font-weight:600;color:var(--text-white,#fff);margin:0 0 .5rem}
+.cs-card__detail{font-size:.75rem;color:rgba(255,255,255,.5);margin-top:.375rem}
+.cs-gauge{height:8px;background:rgba(255,255,255,.08);border-radius:4px;overflow:hidden;margin:.5rem 0}
+.cs-gauge__fill{height:100%;background:linear-gradient(90deg,#f87171,#fbbf24,#4ade80);border-radius:4px;transition:width .6s ease}
+.cs-prediction{display:flex;flex-direction:column;align-items:center;gap:.25rem;text-align:center}
+.cs-prediction__date{font-size:1.5rem;font-weight:700;color:#c084fc;font-family:var(--serif,serif)}
+.cs-prediction__confidence{font-size:.75rem;color:rgba(255,255,255,.5)}
+.cs-extremes{display:flex;flex-direction:column;gap:.375rem}
+.cs-extremes__item{font-size:.8rem;color:var(--text-soft,rgba(255,255,255,.6))}
+.cs-extremes__item strong{color:var(--text-white,#fff)}
+.cs-flag{padding:.5rem .75rem;border-radius:.5rem;margin-bottom:.375rem}
+.cs-flag--warning{background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.2)}
+.cs-flag--info{background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.2)}
+.cs-flag__type{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:rgba(255,255,255,.5)}
+.cs-flag__text{font-size:.8rem;color:var(--text-soft,rgba(255,255,255,.65));margin:.25rem 0 0;line-height:1.4}
+.cs-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.5rem}
+.cs-detail{display:flex;justify-content:space-between;align-items:center;padding:.375rem .5rem;background:rgba(255,255,255,.03);border-radius:.375rem}
+.cs-detail span{font-size:.75rem;color:rgba(255,255,255,.5)}
+.cs-detail strong{font-size:.8rem;color:var(--text-white,#fff)}
+.cs-tooltip{background:rgba(30,15,40,.95);border:1px solid rgba(255,255,255,.15);border-radius:.5rem;padding:.5rem .75rem;font-size:.75rem}
+.cs-tooltip__label{font-weight:600;margin-bottom:.25rem}
+.cs-skeleton{background:rgba(255,255,255,.06);border-radius:.75rem;padding:1rem;animation:pulse 1.5s ease-in-out infinite}
+.cs-skeleton__line{height:.75rem;background:rgba(255,255,255,.08);border-radius:.25rem;margin-bottom:.375rem}
+.cs-skeleton__line--short{width:40%}
+@media(max-width:640px){.cs-page{padding-left:.75rem;padding-right:.75rem}.cs-page__title{font-size:1.5rem}.cs-stats{grid-template-columns:repeat(2,1fr)}.cs-detail-grid{grid-template-columns:1fr}}

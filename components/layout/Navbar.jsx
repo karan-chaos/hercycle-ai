@@ -66,6 +66,7 @@ export default function Navbar() {
     { key: 'insights', label: t('insights'), href: `/${locale}/insights` },
     { key: 'self-care', label: t('selfCare'), href: `/${locale}/self-care` },
     { key: 'phase-tips', label: '🌿 Tips', href: `/${locale}/phase-tips` },
+    { key: 'journal', label: '📔 Journal', href: `/${locale}/journal` },
   ]
 
   const handleLogToday = () => {

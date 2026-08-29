@@ -1,0 +1,46 @@
+/* Phase Tips */
+.pt-page{padding-bottom:6rem;padding-top:1.5rem;max-width:32rem;margin:0 auto;width:100%;padding-left:1rem;padding-right:1rem}
+.pt-page__header{margin-bottom:1.25rem}
+.pt-page__title{font-size:1.875rem;font-weight:700;color:var(--text-white,#fff);font-family:var(--serif,serif)}
+.pt-page__subtitle{color:var(--text-soft,rgba(255,255,255,.6));font-size:.8rem;margin-top:.25rem}
+.pt-page__error{background:rgba(229,115,115,.15);border:1px solid rgba(229,115,115,.3);border-radius:.5rem;padding:.625rem .875rem;color:#e57373;font-size:.8rem;margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center}
+.pt-page__error button{background:none;border:none;color:#e57373;text-decoration:underline;cursor:pointer;font-size:.8rem}
+/* Phase card */
+.pt-phase-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-left:4px solid #f472b6;border-radius:.75rem;padding:1rem;margin-bottom:1rem}
+.pt-phase-card__eyebrow{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:rgba(255,255,255,.45)}
+.pt-phase-card__title{font-size:1.25rem;font-weight:700;color:var(--text-white,#fff);margin:.25rem 0 .375rem}
+.pt-phase-card__overview{font-size:.8rem;color:var(--text-soft,rgba(255,255,255,.6));line-height:1.5}
+/* Timeline */
+.pt-timeline{display:flex;gap:2px;margin-bottom:1.25rem}
+.pt-timeline__seg{flex:1;display:flex;flex-direction:column;align-items:center;gap:.2rem}
+.pt-timeline__bar{width:100%;height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden}
+.pt-timeline__fill{height:100%;background:linear-gradient(90deg,#f472b6,#c084fc);border-radius:3px;transition:width .4s ease}
+.pt-timeline__seg.active .pt-timeline__bar{background:rgba(255,255,255,.12)}
+.pt-timeline__label{font-size:.6rem;color:rgba(255,255,255,.4)}
+.pt-timeline__seg.active .pt-timeline__label{color:#fff;font-weight:600}
+.pt-timeline__day{font-size:.55rem;color:#f472b6;font-weight:700}
+/* Filters */
+.pt-filters{display:flex;flex-wrap:wrap;gap:.375rem;margin-bottom:1rem}
+.pt-filter{padding:.3rem .65rem;border-radius:9999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:rgba(255,255,255,.6);font-size:.75rem;cursor:pointer;transition:all .15s}
+.pt-filter:hover{background:rgba(255,255,255,.08)}
+.pt-filter.active{background:rgba(244,114,182,.2);border-color:rgba(244,114,182,.4);color:#fff;font-weight:600}
+/* Tips */
+.pt-tips{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.25rem}
+.pt-tips__empty{color:var(--text-soft,rgba(255,255,255,.5));font-size:.85rem;text-align:center;padding:1.5rem 0}
+.pt-tip{display:flex;gap:.625rem;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-left:3px solid #f472b6;border-radius:.5rem;padding:.625rem .75rem}
+.pt-tip__icon{font-size:1rem;flex-shrink:0;margin-top:.1rem}
+.pt-tip__text{font-size:.8rem;color:var(--text-soft,rgba(255,255,255,.7));line-height:1.45;margin:0}
+/* Symptoms card */
+.pt-symptoms-card,.pt-care-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:.875rem;margin-bottom:.75rem}
+.pt-symptoms-card__title,.pt-care-card__title{font-size:.85rem;font-weight:600;color:var(--text-white,#fff);margin:0 0 .5rem}
+.pt-symptoms-card__list{display:flex;flex-wrap:wrap;gap:.3rem}
+.pt-symptoms-card__chip{padding:.2rem .5rem;border-radius:9999px;background:rgba(192,132,252,.12);border:1px solid rgba(192,132,252,.2);font-size:.7rem;color:rgba(255,255,255,.65)}
+.pt-care-card__list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.3rem}
+.pt-care-card__item{font-size:.8rem;color:var(--text-soft,rgba(255,255,255,.65));padding-left:1rem;position:relative;line-height:1.4}
+.pt-care-card__item::before{content:'✓';position:absolute;left:0;color:#4ade80;font-weight:700;font-size:.7rem}
+/* Skeleton */
+.pt-skeleton{display:flex;flex-direction:column;gap:.5rem}
+.pt-skeleton__card{background:rgba(255,255,255,.06);border-radius:.75rem;padding:.875rem;animation:pulse 1.5s ease-in-out infinite}
+.pt-skeleton__line{height:.75rem;background:rgba(255,255,255,.08);border-radius:.25rem;margin-bottom:.375rem}
+.pt-skeleton__line--short{width:40%}
+@media(max-width:640px){.pt-page{padding-left:.75rem;padding-right:.75rem}.pt-page__title{font-size:1.5rem}}
